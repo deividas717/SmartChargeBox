@@ -1,0 +1,70 @@
+<android.support.design.widget.CoordinatorLayout
+    android:background="#4c9603"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ViewSwitcher
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:textColor="#fff"
+                android:id="@+id/gps_turn_off_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="GPS yra išjuntas"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/turn_on_gps_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gps_turn_off_label"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/turn_on_gps"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Įjungti GPS"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/stations_list_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ViewSwitcher>
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+</android.support.design.widget.CoordinatorLayout>

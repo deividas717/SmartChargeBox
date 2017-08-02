@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:paddingTop="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        app:srcCompat="@drawable/smart_charge_box_logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/appCompatImageView" />
+
+    <!--<EditText-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--android:textStyle="bold"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="Email address"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_marginEnd="30dp"-->
+        <!--android:background="@drawable/rounded_border_edittext"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_marginEnd="30dp"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:background="@drawable/rounded_border_edittext"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="Password"-->
+        <!--android:inputType="textPassword"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<Button-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#fff"-->
+        <!--android:text="Login"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_marginEnd="30dp"-->
+        <!--android:background="@drawable/rounded_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp" />-->
+
+    <!--<LinearLayout-->
+        <!--android:paddingTop="15dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:paddingEnd="10dp"-->
+            <!--android:layout_marginStart="30dp"-->
+            <!--android:textSize="17sp"-->
+            <!--android:textColor="#919191"-->
+            <!--android:text="Neturite paskyros?"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/register"-->
+            <!--android:layout_marginEnd="30dp"-->
+            <!--android:textStyle="bold|italic"-->
+            <!--android:text="Registruotis"-->
+            <!--android:textSize="17sp"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:paddingBottom="15dp"-->
+        <!--android:textSize="17sp"-->
+        <!--android:textColor="#fff"-->
+        <!--android:text="Arba prisijunkite naudojant"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:paddingBottom="30dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:text="Prisijunkite naudojant:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/facebook_login_button"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#3B5998"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/facebook_logo_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:paddingStart="20dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="Prisijunkti su Facebook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/google_login_button"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#DF4B32"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/google_plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:paddingStart="20dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="Prisijunkti su Google"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

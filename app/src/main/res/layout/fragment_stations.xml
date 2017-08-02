@@ -1,0 +1,145 @@
+<android.support.v4.widget.NestedScrollView
+    android:background="@color/colorPrimary"
+    tools:context="v1.ev.box.charge.smart.smartchargeboxv1.activites.detaill_location.StationsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_weight=".7"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_weight=".3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:tint="@color/colorPrimaryDark"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_location_on_black_24dp"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp" />
+
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:id="@+id/address_full"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/navigate"
+                        android:layout_weight=".3"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:tint="@color/colorPrimaryDark"
+                            app:srcCompat="@drawable/ic_navigation_black_24dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp" />
+
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:text="Naviguoti"
+                            android:id="@+id/street_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                        android:paddingTop="5dp"
+                        android:id="@+id/star_bar"
+                        app:mrb_secondaryProgressTint="#ffbf00"
+                        app:mrb_progressTint="#ffbf00"
+                        app:mrb_indeterminateTint="#ffbf00"
+                        app:mrb_progressBackgroundTint="#ffbf00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialRatingBar.RatingBar.Small" />
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:layout_weight=".3"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<android.support.v7.widget.AppCompatImageView-->
+                            <!--android:id="@+id/heart_img"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--app:srcCompat="@drawable/ic_favorite_border_black_24dp" />-->
+
+                        <!--<android.support.v7.widget.AppCompatRatingBar-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--android:id="@+id/rating_bar"-->
+                            <!--style="?android:attr/ratingBarStyleSmall"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="10dp"-->
+                            <!--android:numStars="5"-->
+                            <!--android:rating="0" />-->
+
+                    <!--</LinearLayout>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight=".3"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/map_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/stations_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

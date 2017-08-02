@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=F2:73:8A:07:EE:2F:B4:CC:5C:9D:61:D0:77:D3:A9:14:65:20:B2:B2%3Bv1.ev.box.charge.smart.smartchargeboxv1.menu.menu_fragments
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    F2:73:8A:07:EE:2F:B4:CC:5C:9D:61:D0:77:D3:A9:14:65:20:B2:B2
+
+    SHA-1 certificate fingerprint:
+    F2:73:8A:07:EE:2F:B4:CC:5C:9D:61:D0:77:D3:A9:14:65:20:B2:B2
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+         AIzaSyDNueE3nCCu9r6PNgVu5zm54VHfnBLqr7U
+    </string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "15889245939",
+    "project_id": "firebase-smartchargeboxv1"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15889245939:android:96d103dfd8f2ab8c",
+        "android_client_info": {
+          "package_name": "v1.ev.box.charge.smart.smartchargeboxv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15889245939-elj97rovackoi9eeu2v9fcm6n9cj6lt3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "v1.ev.box.charge.smart.smartchargeboxv1",
+            "certificate_hash": "f2738a07ee2fb4cc5c9d61d077d3a9146520b2b2"
+          }
+        },
+        {
+          "client_id": "15889245939-n49utt0t9rsh46q1p33705itn2s5sd6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCsuII5I0xd5knJ2qCCR6Nwhp4hWKIQQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

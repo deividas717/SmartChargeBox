@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="v1.ev.box.charge.smart.smartchargeboxv1.activites.station_time.StationFullTimeActivity">
+
+    <com.alamkanak.weekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:eventTextColor="@android:color/white"
+        app:textSize="12sp"
+        app:hourHeight="60dp"
+        app:headerColumnPadding="8dp"
+        app:headerColumnTextColor="#8f000000"
+        app:headerRowPadding="12dp"
+        app:columnGap="8dp"
+        app:headerRowBackgroundColor="#ffefefef"
+        app:dayBackgroundColor="#05000000"
+        app:todayBackgroundColor="#1848adff"
+        app:headerColumnBackground="#ffffffff"/>
+
+    <LinearLayout
+        android:layout_gravity="end|bottom"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_margin="10dp"
+            android:id="@+id/reserve_btn"
+            app:backgroundTint="#ffffff"
+            android:layout_gravity="end|bottom"
+            app:srcCompat="@drawable/ic_access_time_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_gravity="top|bottom"-->
+            <!--app:layout_anchor="@+id/reserve_btn"-->
+            <!--android:id="@+id/show_reservations_btn"-->
+            <!--app:backgroundTint="#06c0d9"-->
+            <!--app:srcCompat="@drawable/rect_btn_selector"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

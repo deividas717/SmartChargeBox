@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        app:layout_scrollFlags="scroll|enterAlways"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_searchBarMarginLeft="10dp"
+        app:floatingSearch_searchBarMarginTop="10dp"
+        app:floatingSearch_searchBarMarginRight="10dp"
+        app:floatingSearch_searchHint="Paieška"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_showSearchKey="false"
+        app:floatingSearch_leftActionMode="showSearch"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"/>
+
+    <android.support.v4.widget.NestedScrollView
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="true"
+        android:background="@android:color/holo_orange_light">
+
+        <include layout="@layout/sheet_layout" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/primary_wrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bottom_sheet"
+        app:layout_anchorGravity="top|end">
+
+        <android.support.design.widget.FloatingActionButton
+            app:backgroundTint="#aaaaaa"
+            app:layout_anchorGravity="top|end"
+            android:id="@+id/show_power_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/seekBarValues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0%"
+            android:elevation="16dp"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <!-- Pin secondary fab in the top of the extended primary -->
+    <android.support.design.widget.FloatingActionButton
+        app:backgroundTint="#11ae03"
+        android:id="@+id/position_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_my_location_black_24dp"
+        app:layout_anchor="@+id/primary_wrap"
+        app:layout_anchorGravity="top|end"/>
+
+    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="top|end"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+            android:visibility="invisible"
+            android:id="@+id/vertical_seek_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:splitTrack="false"
+            app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
+    </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+</android.support.design.widget.CoordinatorLayout>

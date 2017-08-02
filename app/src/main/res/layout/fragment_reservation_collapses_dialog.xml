@@ -1,0 +1,33 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textColor="#05487b"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Jūs jau esate rezervavę šiu laiku. Jis kertasi su norima rezervacija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:scrollbars="vertical"
+        android:id="@+id/collapse_reservations_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <Button
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="end"
+        android:textSize="16sp"
+        android:id="@+id/cancel"
+        android:textColor="#2e9df2"
+        android:background="@drawable/invisible_buttons"
+        android:text="Uždaryti langą"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

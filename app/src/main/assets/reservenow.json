@@ -1,0 +1,16 @@
+{
+    "response_url": "",
+    "token": {
+        "uid": "",
+        "type": "OTHER",
+        "auth_id" : "",
+        "issuer": "",
+        "valid": true,
+        "whitelist": "ALWAYS",
+        "last_updated" : ""
+    },
+    "expiry_date": "",
+    "start_date": "",
+    "reservation_id": "",
+    "location_id": ""
+}

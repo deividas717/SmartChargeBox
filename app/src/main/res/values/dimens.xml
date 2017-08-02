@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_size_half">28dp</dimen>
+    <dimen name="anchor_point">240dp</dimen>
+    <dimen name="bottom_sheet_peek_height">110dp</dimen>      <!-- When collapsed, this is how much of the title bar shows (can be less than it's height) -->
+    <dimen name="bottom_sheet_title_height">112dp</dimen>    <!-- The actual height of the title bar. Can be more then peek height (but not less) -->
+    <dimen name="bottom_sheet_shadow_height">10dp</dimen>    <!-- The height of the shadow above the bottom sheet -->
+    <dimen name="high_touch_slop">60dp</dimen>               <!-- The amount of touch slop when the bottom sheet is collapsed or at anchor state -->
+    <dimen name="min_distance_for_fling">4dp</dimen>         <!-- Drag threshold to consider a gesture a fling -->
+    <dimen name="merged_toolbar_hide_threshold">20dp</dimen> <!-- The amount by which we can scroll away from anchor state before the merged toolbar hides -->
+    <dimen name="scroll_toolbar_padding_top">8dp</dimen>     <!-- The padding between scroll toolbar and status bar -->
+</resources>
